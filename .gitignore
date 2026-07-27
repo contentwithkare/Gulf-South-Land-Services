@@ -1,0 +1,5 @@
+.claude/
+Brand_assets/
+temporary screenshots/
+*.png
+node_modules/

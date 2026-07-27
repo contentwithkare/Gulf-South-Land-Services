@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Excavator Deals | The #1 Dealer Marketplace for Heavy Equipment</title>
+<meta name="description" content="Excavator Deals connects you with authorized dealers from top manufacturers nationwide — honest advice, fair pricing, and the exact machine you need." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0a0a0d',
+          surface: '#151519',
+          surface2: '#1c1c22',
+          hairline: 'rgba(255,255,255,0.08)',
+          gold: {
+            DEFAULT: '#f2b84d',
+            dark: '#d99a2b',
+            light: '#f8d187',
+          },
+        },
+        fontFamily: {
+          display: ['"Poppins"', 'sans-serif'],
+          body: ['"Inter"', 'sans-serif'],
+        },
+        boxShadow: {
+          gold: '0 14px 30px -8px rgba(242,184,77,0.35), 0 4px 10px -4px rgba(0,0,0,0.6)',
+          card: '0 20px 40px -16px rgba(0,0,0,0.55), 0 2px 6px -2px rgba(0,0,0,0.4)',
+          lift: '0 24px 48px -18px rgba(0,0,0,0.6)',
+        },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0d;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .font-display { font-family: 'Poppins', sans-serif; }
+
+  .noise {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+  }
+
+  .btn-pop {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease;
+  }
+  .btn-pop:hover { transform: translateY(-2px) scale(1.02); }
+  .btn-pop:active { transform: translateY(0) scale(0.98); }
+
+  .card-hover { transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease; }
+  .card-hover:hover { transform: translateY(-6px); }
+
+  .link-underline { position: relative; }
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 2px;
+    background: #f2b84d;
+    transition: width 0.3s cubic-bezier(0.22,1,0.36,1);
+  }
+  .link-underline:hover::after { width: 100%; }
+
+  .mobile-menu { transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), opacity 0.4s cubic-bezier(0.22,1,0.36,1); }
+
+  .radial-fade {
+    background:
+      radial-gradient(ellipse 80% 60% at 15% 10%, rgba(242,184,77,0.10), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 90%, rgba(242,184,77,0.06), transparent 60%);
+  }
+
+  ::selection { background: rgba(242,184,77,0.35); color: #fff; }
+</style>
+</head>
+<body class="bg-ink text-white overflow-x-hidden">
+
+<!-- Top utility bar -->
+<div class="hidden sm:flex items-center justify-between px-6 lg:px-12 py-2 text-xs text-white/50 border-b border-hairline bg-black/40">
+  <div class="flex items-center gap-6">
+    <a href="tel:+16501234156" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-300">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (650) 123-4156
+    </a>
+    <a href="mailto:info@excavatordeals.com" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-300">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6z"/><path d="m22 6-10 7L2 6"/></svg>
+      info@excavatordeals.com
+    </a>
+  </div>
+  <div class="flex items-center gap-2">
+    <a href="#" aria-label="Facebook" class="w-6 h-6 rounded-md bg-gold/15 flex items-center justify-center hover:bg-gold hover:text-ink transition-colors duration-300">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.56 1.52-3.98 3.86-3.98 1.12 0 2.29.2 2.29.2v2.5h-1.29c-1.27 0-1.67.79-1.67 1.6V12h2.84l-.45 2.89h-2.39v6.98A10 10 0 0 0 22 12"/></svg>
+    </a>
+    <a href="#" aria-label="Instagram" class="w-6 h-6 rounded-md bg-gold/15 flex items-center justify-center hover:bg-gold hover:text-ink transition-colors duration-300">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="sticky top-0 z-50 bg-ink/90 backdrop-blur-md border-b border-hairline">
+  <nav class="flex items-center justify-between px-6 lg:px-12 py-4">
+    <a href="#" class="flex items-center gap-2.5">
+      <svg width="30" height="30" viewBox="0 0 24 24" class="shrink-0">
+        <path d="M12 2 2 20h20L12 2z" fill="#f2b84d"/>
+        <path d="M12 8 6.5 18h11L12 8z" fill="#0a0a0d"/>
+      </svg>
+      <div class="leading-none">
+        <div class="font-display font-800 text-lg tracking-tight">EXCAVATOR</div>
+        <div class="font-display text-[10px] tracking-[0.4em] text-gold -mt-0.5">DEALS</div>
+      </div>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-8 text-sm text-white/75 font-medium">
+      <a href="#about" class="link-underline hover:text-white transition-colors duration-300">About Us</a>
+      <a href="#equipment" class="link-underline hover:text-white transition-colors duration-300">Equipment</a>
+      <a href="#comparison" class="link-underline hover:text-white transition-colors duration-300">Model Comparison</a>
+      <a href="#help" class="link-underline hover:text-white transition-colors duration-300">Help Me Choose</a>
+      <a href="#support" class="link-underline hover:text-white transition-colors duration-300">Support</a>
+      <a href="#giveaway" class="link-underline hover:text-white transition-colors duration-300">Giveaway</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="#dealer" class="btn-pop hidden sm:inline-flex items-center bg-gold text-ink font-display font-600 text-sm px-5 py-2.5 rounded-full shadow-gold hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+        Find A Dealer
+      </a>
+      <button id="menuBtn" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-full border border-hairline flex items-center justify-center hover:border-gold/50 transition-colors duration-300">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu lg:hidden fixed inset-x-0 top-[65px] bottom-0 bg-ink/98 backdrop-blur-md opacity-0 pointer-events-none -translate-y-2 z-40 overflow-y-auto">
+    <div class="flex flex-col gap-1 px-6 py-8 text-lg font-medium">
+      <a href="#about" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">About Us</a>
+      <a href="#equipment" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Equipment</a>
+      <a href="#comparison" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Model Comparison</a>
+      <a href="#help" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Help Me Choose</a>
+      <a href="#support" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Support</a>
+      <a href="#giveaway" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Giveaway</a>
+      <a href="#dealer" class="btn-pop mt-6 text-center bg-gold text-ink font-display font-600 px-5 py-3 rounded-full shadow-gold">Find A Dealer</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://placehold.co/1920x1100/2b2b2b/2b2b2b" alt="" class="w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/30"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60"></div>
+  </div>
+  <div class="noise" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%222%22 stitchTiles=%22stitch%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/></svg>');"></div>
+
+  <div class="relative px-6 lg:px-12 pt-16 pb-24 md:pt-24 md:pb-36 max-w-3xl">
+    <h1 class="font-display font-700 text-4xl sm:text-5xl md:text-6xl leading-[1.08] tracking-[-0.02em]">
+      The #1 Dealer Marketplace <span class="text-gold">for</span>
+      <span class="block text-gold">Top-of-the-Line Equipment</span>
+    </h1>
+    <p class="mt-6 text-white/65 text-base md:text-lg leading-[1.7] max-w-xl">
+      We connect you with authorized dealers from top manufacturers nationwide to ensure you get honest advice, fair pricing, and the exact machine you actually need.
+    </p>
+    <div class="mt-8 flex flex-wrap items-center gap-4">
+      <a href="#dealer" class="btn-pop inline-flex items-center bg-gold text-ink font-display font-600 px-7 py-3.5 rounded-full shadow-gold hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+        Book Free Consultation
+      </a>
+      <a href="#equipment" class="btn-pop inline-flex items-center border border-white/30 text-white font-display font-600 px-7 py-3.5 rounded-full hover:bg-white/10 hover:border-white/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50">
+        Explore Equipment
+      </a>
+    </div>
+    <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/55">
+      <span class="flex items-center gap-2"><svg width="15" height="15" viewBox="0 0 24 24" fill="#f2b84d"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>Zero Negative Reviews</span>
+      <span class="flex items-center gap-2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg>Nationwide Inventory</span>
+      <span class="flex items-center gap-2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Lifetime Support</span>
+    </div>
+  </div>
+</section>
+
+<!-- Stronger Machines -->
+<section id="about" class="relative px-6 lg:px-12 py-20 md:py-28 radial-fade">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <div>
+      <h2 class="font-display font-700 text-3xl md:text-4xl leading-tight tracking-[-0.02em]">
+        Stronger Machines.<br/>
+        <span class="text-gold">Smarter Buying Experience.</span>
+      </h2>
+      <div class="mt-6 space-y-4 text-white/60 leading-[1.7]">
+        <p>We exclusively partner with top-tier manufacturers that deliver industrial-grade equipment built for the toughest jobs, engineered for durability, performance, and lasting value.</p>
+        <p>Our nationwide network of certified dealers provides expert guidance, professional delivery, setup, and comprehensive support from technicians who know every machine inside and out.</p>
+        <p>From purchase through years of ownership, we ensure your equipment runs reliably so you can focus on getting the job done.</p>
+      </div>
+      <ul class="mt-7 space-y-3">
+        <li class="flex items-center gap-3 text-sm text-white/80"><span class="w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center shrink-0"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>5+ Years Trusted Experience</li>
+        <li class="flex items-center gap-3 text-sm text-white/80"><span class="w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center shrink-0"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Since 2021 Growing Nationwide</li>
+        <li class="flex items-center gap-3 text-sm text-white/80"><span class="w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center shrink-0"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>$6K&ndash;$15K Average Customer Savings</li>
+      </ul>
+    </div>
+    <div class="relative flex justify-center">
+      <div class="absolute w-64 h-64 md:w-80 md:h-80 rounded-full bg-gold/90 blur-[2px]"></div>
+      <img src="https://placehold.co/560x420/0a0a0d/f2b84d?text=Excavator" alt="Heavy equipment excavator" class="relative w-full max-w-md drop-shadow-2xl" />
+    </div>
+  </div>
+</section>
+
+<!-- Top-Rated Machinery -->
+<section id="equipment" class="px-6 lg:px-12 py-20 md:py-28 bg-black/40 border-y border-hairline">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="font-display font-700 text-3xl md:text-4xl tracking-[-0.02em]">Top-Rated Machinery <span class="text-gold">for Every Job</span></h2>
+      <p class="mt-4 text-white/60 leading-[1.7]">Explore our most popular equipment trusted by landowners, builders and contractors across the USA. Reliable machines for every type of job.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card-hover group rounded-2xl bg-surface border border-hairline overflow-hidden shadow-card">
+        <div class="overflow-hidden">
+          <img src="https://placehold.co/480x320/1c1c22/f2b84d?text=SHY27" alt="SHY27 Mini Excavator" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+        </div>
+        <div class="p-5 flex items-center justify-between">
+          <span class="font-display font-600 text-sm">SHY27 Mini Excavator</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2" class="transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </div>
+      <div class="card-hover group rounded-2xl bg-surface border border-hairline overflow-hidden shadow-card">
+        <div class="overflow-hidden">
+          <img src="https://placehold.co/480x320/1c1c22/f2b84d?text=SHY15" alt="SHY15 Mini Excavator" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+        </div>
+        <div class="p-5 flex items-center justify-between">
+          <span class="font-display font-600 text-sm">SHY15 Mini Excavator</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2" class="transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </div>
+      <div class="card-hover group rounded-2xl bg-surface border border-hairline overflow-hidden shadow-card">
+        <div class="overflow-hidden">
+          <img src="https://placehold.co/480x320/1c1c22/f2b84d?text=LHY360" alt="LHY360 Mini-Skid Loader" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+        </div>
+        <div class="p-5 flex items-center justify-between">
+          <span class="font-display font-600 text-sm">LHY360 Mini-Skid Loader</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2" class="transition-transform duration-300 group-hover:translate-x-1"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Honest Guidance Banner -->
+<section id="help" class="px-6 lg:px-12 py-20 md:py-28">
+  <div class="max-w-6xl mx-auto relative rounded-3xl overflow-hidden shadow-lift">
+    <img src="https://placehold.co/1400x600/2b2b2b/2b2b2b" alt="Dealer advisor guiding a customer" class="w-full h-[380px] md:h-[440px] object-cover" style="mix-blend-mode:multiply; filter:grayscale(15%);" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/60"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      <h2 class="font-display font-700 text-2xl sm:text-3xl md:text-4xl tracking-[-0.02em]">Honest Guidance. Better Decisions.</h2>
+      <p class="mt-4 max-w-lg text-white/70 text-sm md:text-base leading-[1.7]">Get expert advice from someone who puts your needs first, helping you choose the right equipment with clarity and confidence.</p>
+      <a href="#dealer" class="btn-pop mt-7 inline-flex items-center bg-gold text-ink font-display font-600 px-7 py-3.5 rounded-full shadow-gold hover:bg-gold-light">Book Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- Find Your Trusted Dealer -->
+<section id="dealer" class="px-6 lg:px-12 py-20 md:py-28 bg-black/40 border-y border-hairline">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="font-display font-700 text-3xl md:text-4xl tracking-[-0.02em]">Find Your <span class="text-gold">Trusted Dealer</span></h2>
+    <p class="mt-4 max-w-xl mx-auto text-white/60 leading-[1.7]">Get expert advice, service, and support from us &mdash; and we'll connect you with a certified dealer near you.</p>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-6 text-left">
+      <div class="card-hover rounded-2xl bg-surface border border-hairline p-6 shadow-card">
+        <div class="w-11 h-11 rounded-xl bg-gold flex items-center justify-center mb-5 shadow-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a0a0d" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3 class="font-display font-600 text-base mb-2.5">What We Do</h3>
+        <p class="text-sm text-white/55 leading-[1.7]">Get expert guidance and transparent pricing across premium brands, with honest comparisons that match the right machine to your workload, budget, and jobsite needs for long-term performance and real value.</p>
+      </div>
+      <div class="card-hover rounded-2xl bg-surface border border-hairline p-6 shadow-card">
+        <div class="w-11 h-11 rounded-xl bg-gold flex items-center justify-center mb-5 shadow-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a0a0d" stroke-width="2"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v6M12 13l-5.5 4M12 13l5.5 4"/></svg>
+        </div>
+        <h3 class="font-display font-600 text-base mb-2.5">Our Network</h3>
+        <p class="text-sm text-white/55 leading-[1.7]">Exclusive partnerships with top-tier manufacturers and certified dealers nationwide, ensuring reliable equipment access, priority support, and genuine parts availability that keep your machines performing strong.</p>
+      </div>
+      <div class="card-hover rounded-2xl bg-surface border border-hairline p-6 shadow-card">
+        <div class="w-11 h-11 rounded-xl bg-gold flex items-center justify-center mb-5 shadow-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0a0a0d" stroke-width="2"><path d="M20 12V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 2 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l1.5-.87"/><path d="M12 22V12M20 8 12 12 4 8"/><path d="m17 17 2 2 4-4"/></svg>
+        </div>
+        <h3 class="font-display font-600 text-base mb-2.5">Beyond The Sale</h3>
+        <p class="text-sm text-white/55 leading-[1.7]">Delivery, professional setup, warranty guidance, and long-term parts support &mdash; ensuring your equipment performs reliably, stays well maintained, and delivers lasting confidence long after the sale is complete.</p>
+      </div>
+    </div>
+
+    <a href="#support" class="btn-pop mt-12 inline-flex items-center bg-gold text-ink font-display font-600 px-7 py-3.5 rounded-full shadow-gold hover:bg-gold-light">Find The Trusted Dealer</a>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="px-6 lg:px-12 py-20 md:py-28">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="font-display font-700 text-3xl md:text-4xl tracking-[-0.02em] leading-tight">
+      What Real Customers Are Saying About<br class="hidden sm:block" />
+      <span class="text-gold">Their Machine Buying Experience</span>
+    </h2>
+    <p class="mt-4 max-w-lg mx-auto text-white/60 leading-[1.7]">Real experiences from equipment owners who rely on their machines and our support every day.</p>
+
+    <div class="mt-14 grid md:grid-cols-2 gap-6 text-left">
+      <div class="card-hover rounded-2xl bg-surface border border-hairline p-7 shadow-card">
+        <div class="flex gap-1 text-gold">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+        </div>
+        <p class="mt-5 text-sm text-white/65 leading-[1.7]">I purchased the SHY27 Mini Excavator for residential construction jobs and it has performed very well in tight spaces while giving strong digging power. The guidance helped me compare the right models and the pricing and delivery were better than what I found locally.</p>
+        <div class="mt-6 pt-6 border-t border-hairline flex items-center gap-3">
+          <img src="https://placehold.co/40x40/1c1c22/f2b84d?text=BB" alt="Bruce Brown" class="w-10 h-10 rounded-full object-cover" />
+          <span class="font-display font-600 text-sm">Bruce Brown</span>
+        </div>
+      </div>
+      <div class="card-hover rounded-2xl bg-surface border border-hairline p-7 shadow-card">
+        <div class="flex gap-1 text-gold">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7-5.4-4.7 7.1-.6z"/></svg>
+        </div>
+        <p class="mt-5 text-sm text-white/65 leading-[1.7]">We purchased the SHY15 Mini Excavator for residential projects, and it has proven reliable and efficient in tight spaces while delivering solid digging performance. The team guided us in choosing the right model, and pricing and delivery were better than local options.</p>
+        <div class="mt-6 pt-6 border-t border-hairline flex items-center gap-3">
+          <img src="https://placehold.co/40x40/1c1c22/f2b84d?text=SD" alt="Steve Dunn" class="w-10 h-10 rounded-full object-cover" />
+          <span class="font-display font-600 text-sm">Steve Dunn</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 flex justify-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-gold"></span>
+      <span class="w-2 h-2 rounded-full bg-white/20"></span>
+      <span class="w-2 h-2 rounded-full bg-white/20"></span>
+    </div>
+
+    <!-- Trust badges -->
+    <div class="mt-14 pt-10 border-t border-hairline flex flex-wrap justify-center gap-x-10 gap-y-4 text-sm text-white/55">
+      <span class="flex items-center gap-2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>1,470+ Verified Reviews</span>
+      <span class="flex items-center gap-2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2"><rect x="1" y="6" width="15" height="12" rx="2"/><path d="M16 10h4l3 3v5h-7z"/><circle cx="6" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>Professional Delivery &amp; Setup</span>
+      <span class="flex items-center gap-2"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f2b84d" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg>Nationwide Dealer Network</span>
+    </div>
+    <a href="#" class="btn-pop mt-8 inline-flex items-center bg-gold text-ink font-display font-600 px-7 py-3.5 rounded-full shadow-gold hover:bg-gold-light">See More Reviews On Facebook</a>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section id="support" class="px-6 lg:px-12">
+  <div class="max-w-6xl mx-auto rounded-3xl bg-gradient-to-br from-gold to-gold-dark px-8 py-12 md:px-14 md:py-14 flex flex-col md:flex-row items-center justify-between gap-8 shadow-gold">
+    <div class="text-center md:text-left">
+      <h2 class="font-display font-700 text-2xl md:text-3xl text-ink tracking-[-0.02em]">Signup Our <span class="text-white">Newsletter</span></h2>
+      <p class="mt-2 text-ink/70 text-sm max-w-sm leading-[1.7]">Get exclusive equipment insights, expert guidance, and product updates delivered to your inbox.</p>
+    </div>
+    <form class="w-full md:w-auto flex flex-col sm:flex-row gap-3" onsubmit="return false;">
+      <input type="email" required placeholder="Your email address" class="w-full sm:w-72 px-5 py-3.5 rounded-full bg-ink/90 text-white placeholder-white/40 text-sm border border-ink focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-ink" />
+      <button type="submit" class="btn-pop bg-ink text-white font-display font-600 text-sm px-7 py-3.5 rounded-full hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">Sign Up</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="giveaway" class="px-6 lg:px-12 pt-20 pb-8 mt-16">
+  <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-14 border-b border-hairline">
+    <div>
+      <a href="#" class="flex items-center gap-2.5">
+        <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0">
+          <path d="M12 2 2 20h20L12 2z" fill="#f2b84d"/>
+          <path d="M12 8 6.5 18h11L12 8z" fill="#0a0a0d"/>
+        </svg>
+        <div class="leading-none">
+          <div class="font-display font-800 text-base tracking-tight">EXCAVATOR</div>
+          <div class="font-display text-[9px] tracking-[0.4em] text-gold -mt-0.5">DEALS</div>
+        </div>
+      </a>
+      <p class="mt-4 text-sm text-white/50 leading-[1.7] max-w-xs">Your trusted partner for premium equipment guidance, fair pricing, and dealer connections nationwide.</p>
+    </div>
+    <div>
+      <h4 class="font-display font-600 text-sm mb-4">Quick Links</h4>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li><a href="#about" class="hover:text-gold transition-colors duration-300">About Us</a></li>
+        <li><a href="#equipment" class="hover:text-gold transition-colors duration-300">Equipment</a></li>
+        <li><a href="#comparison" class="hover:text-gold transition-colors duration-300">Model Comparison</a></li>
+        <li><a href="#help" class="hover:text-gold transition-colors duration-300">Help Me Choose</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-600 text-sm mb-4">Equipment</h4>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Mini Excavators</a></li>
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Mini Skid Loaders</a></li>
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Compact Tractors</a></li>
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Attachments &amp; Implements</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-600 text-sm mb-4">Support</h4>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Contact Us</a></li>
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Service Requests</a></li>
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Warranty Claims</a></li>
+        <li><a href="#" class="hover:text-gold transition-colors duration-300">Parts Ordering</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="mt-8 text-center text-xs text-white/35">&copy; 2026 Excavator Deals. All rights reserved.</p>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  let open = false;
+  menuBtn.addEventListener('click', () => {
+    open = !open;
+    mobileMenu.classList.toggle('opacity-0', !open);
+    mobileMenu.classList.toggle('pointer-events-none', !open);
+    mobileMenu.classList.toggle('-translate-y-2', !open);
+    menuBtn.innerHTML = open
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(a => a.addEventListener('click', () => {
+    open = false;
+    mobileMenu.classList.add('opacity-0','pointer-events-none','-translate-y-2');
+    menuBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+  }));
+</script>
+</body>
+</html>
