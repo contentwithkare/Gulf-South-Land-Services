@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us | Gulf South Land Services, LLC</title>
+<meta name="description" content="Get in touch with Gulf South Land Services for a free estimate on excavation, land clearing, or site prep across Greater New Orleans." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0d0d0d',
+          surface: '#17140f',
+          surface2: '#1f1a13',
+          hairline: 'rgba(242,239,233,0.08)',
+          gold: {
+            DEFAULT: '#de9211',
+            dark: '#a0690c',
+            light: '#e8ba6d',
+          },
+        },
+        fontFamily: {
+          display: ['"Oswald"', 'sans-serif'],
+          body: ['"Inter"', 'sans-serif'],
+        },
+        boxShadow: {
+          gold: '0 14px 30px -8px rgba(222,146,17,0.35), 0 4px 10px -4px rgba(0,0,0,0.6)',
+          card: '0 20px 40px -16px rgba(0,0,0,0.55), 0 2px 6px -2px rgba(0,0,0,0.4)',
+          lift: '0 24px 48px -18px rgba(0,0,0,0.6)',
+        },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0d;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .font-display { font-family: 'Oswald', sans-serif; }
+  h1, h2, h3 { text-transform: uppercase; }
+
+  .noise {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+  }
+
+  .btn-pop {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease;
+  }
+  .btn-pop:hover { transform: translateY(-2px) scale(1.02); }
+  .btn-pop:active { transform: translateY(0) scale(0.98); }
+
+  .card-hover { transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease; }
+  .card-hover:hover { transform: translateY(-6px); }
+
+  .link-underline { position: relative; }
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 2px;
+    background: #de9211;
+    transition: width 0.3s cubic-bezier(0.22,1,0.36,1);
+  }
+  .link-underline:hover::after { width: 100%; }
+
+  .mobile-menu { transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), opacity 0.4s cubic-bezier(0.22,1,0.36,1); }
+
+  .radial-fade {
+    background:
+      radial-gradient(ellipse 80% 60% at 15% 10%, rgba(222,146,17,0.10), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 90%, rgba(222,146,17,0.06), transparent 60%);
+  }
+
+  ::selection { background: rgba(222,146,17,0.35); color: #fff; }
+
+  .field {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(242,239,233,0.12);
+    border-radius: 0.75rem;
+    padding: 0.85rem 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+  }
+  .field::placeholder { color: rgba(255,255,255,0.35); }
+  .field:focus { outline: none; border-color: #de9211; background: rgba(255,255,255,0.06); }
+  .field-label { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-bottom: 0.4rem; }
+</style>
+</head>
+<body class="bg-ink text-white overflow-x-hidden">
+
+<!-- Top utility bar -->
+<div class="hidden sm:flex items-center justify-between px-6 lg:px-12 py-2 text-xs text-white/50 border-b border-hairline bg-black/40">
+  <div class="flex items-center gap-6">
+    <a href="tel:+15049128400" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-300">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      504-912-8400
+    </a>
+    <a href="tel:+15043072437" class="flex items-center gap-1.5 hover:text-gold transition-colors duration-300">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      504-307-2437
+    </a>
+    <span class="flex items-center gap-1.5 text-white/40">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      New Orleans, LA
+    </span>
+  </div>
+  <div class="flex items-center gap-2">
+    <a href="#" aria-label="Facebook" class="w-6 h-6 rounded-md bg-gold/15 flex items-center justify-center hover:bg-gold hover:text-ink transition-colors duration-300">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.56 1.52-3.98 3.86-3.98 1.12 0 2.29.2 2.29.2v2.5h-1.29c-1.27 0-1.67.79-1.67 1.6V12h2.84l-.45 2.89h-2.39v6.98A10 10 0 0 0 22 12"/></svg>
+    </a>
+    <a href="#" aria-label="Instagram" class="w-6 h-6 rounded-md bg-gold/15 flex items-center justify-center hover:bg-gold hover:text-ink transition-colors duration-300">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- Nav -->
+<header id="siteHeader" class="sticky top-0 z-50 bg-ink/90 backdrop-blur-md border-b border-hairline">
+  <nav class="flex items-center justify-between px-6 lg:px-12 py-4">
+    <a href="index.html" class="flex items-center gap-2.5">
+      <img src="Brand_assets/gulf-south-logo.png" alt="Gulf South Land Services, LLC" class="h-20 md:h-24 w-auto shrink-0" />
+    </a>
+
+    <div class="hidden lg:flex items-center gap-8 text-sm text-white/75 font-medium">
+      <a href="index.html#about" class="link-underline hover:text-white transition-colors duration-300">About Us</a>
+      <a href="services.html" class="link-underline hover:text-white transition-colors duration-300">Services</a>
+      <a href="index.html#dealer" class="link-underline hover:text-white transition-colors duration-300">Why Choose Us</a>
+      <a href="index.html#reviews" class="link-underline hover:text-white transition-colors duration-300">Reviews</a>
+      <a href="index.html#support" class="link-underline hover:text-white transition-colors duration-300">Get A Quote</a>
+      <a href="contact.html" class="link-underline text-white after:w-full">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="contact.html" class="btn-pop hidden sm:inline-flex items-center bg-gradient-to-br from-gold to-gold-dark text-ink font-display font-600 text-sm px-5 py-2.5 rounded-full shadow-gold hover:from-gold-light hover:to-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+        Get A Free Estimate
+      </a>
+      <button id="menuBtn" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-full border border-hairline flex items-center justify-center hover:border-gold/50 transition-colors duration-300">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu lg:hidden fixed inset-x-0 bottom-0 bg-ink/98 backdrop-blur-md opacity-0 pointer-events-none -translate-y-2 z-40 overflow-y-auto">
+    <div class="flex flex-col gap-1 px-6 py-8 text-lg font-medium">
+      <a href="index.html#about" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">About Us</a>
+      <a href="services.html" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Services</a>
+      <a href="index.html#dealer" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Why Choose Us</a>
+      <a href="index.html#reviews" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Reviews</a>
+      <a href="index.html#support" class="py-3 border-b border-hairline hover:text-gold transition-colors duration-300">Get A Quote</a>
+      <a href="contact.html" class="py-3 border-b border-hairline text-gold">Contact</a>
+      <a href="contact.html" class="btn-pop mt-6 text-center bg-gradient-to-br from-gold to-gold-dark text-ink font-display font-600 px-5 py-3 rounded-full shadow-gold">Get A Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<!-- Page hero -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="Brand_assets/download.jpg" alt="" class="w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/90 to-ink/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60"></div>
+  </div>
+  <div class="noise" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%222%22 stitchTiles=%22stitch%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/></svg>');"></div>
+
+  <div class="relative px-6 lg:px-12 pt-16 pb-16 md:pt-20 md:pb-20 max-w-3xl">
+    <h1 class="font-display font-700 text-4xl sm:text-5xl md:text-6xl leading-[1.08] tracking-[-0.02em]">
+      Let's Talk About <span class="text-gold">Your Project</span>
+    </h1>
+    <p class="mt-6 text-white/65 text-base md:text-lg leading-[1.7] max-w-xl normal-case">
+      Tell us a little about what you need done, and we'll get back to you with straightforward pricing &mdash; no obligation.
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="px-6 lg:px-12 py-20 md:py-28 radial-fade">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-10">
+
+    <!-- Contact info -->
+    <div class="lg:col-span-2 space-y-6">
+      <div class="rounded-2xl bg-surface border border-hairline p-7 shadow-card">
+        <h2 class="font-display font-700 text-xl tracking-[-0.01em] mb-6">Get In Touch</h2>
+
+        <div class="space-y-5">
+          <a href="tel:+15049128400" class="flex items-start gap-3 group">
+            <span class="w-10 h-10 rounded-xl bg-gold/15 flex items-center justify-center shrink-0 group-hover:bg-gold transition-colors duration-300">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#de9211" stroke-width="2" class="group-hover:stroke-ink transition-colors duration-300"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+              <span class="block text-sm text-white/50 normal-case">Call or text</span>
+              <span class="block font-display font-600 text-sm">504-912-8400</span>
+            </span>
+          </a>
+          <a href="tel:+15043072437" class="flex items-start gap-3 group">
+            <span class="w-10 h-10 rounded-xl bg-gold/15 flex items-center justify-center shrink-0 group-hover:bg-gold transition-colors duration-300">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#de9211" stroke-width="2" class="group-hover:stroke-ink transition-colors duration-300"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+              <span class="block text-sm text-white/50 normal-case">Second line</span>
+              <span class="block font-display font-600 text-sm">504-307-2437</span>
+            </span>
+          </a>
+          <div class="flex items-start gap-3">
+            <span class="w-10 h-10 rounded-xl bg-gold/15 flex items-center justify-center shrink-0">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#de9211" stroke-width="2"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>
+              <span class="block text-sm text-white/50 normal-case">Service area</span>
+              <span class="block font-display font-600 text-sm">Greater New Orleans, LA</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="mt-7 pt-6 border-t border-hairline flex items-center gap-2">
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-gold/15 flex items-center justify-center hover:bg-gold hover:text-ink transition-colors duration-300">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.56 1.52-3.98 3.86-3.98 1.12 0 2.29.2 2.29.2v2.5h-1.29c-1.27 0-1.67.79-1.67 1.6V12h2.84l-.45 2.89h-2.39v6.98A10 10 0 0 0 22 12"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-gold/15 flex items-center justify-center hover:bg-gold hover:text-ink transition-colors duration-300">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-gradient-to-br from-gold to-gold-dark p-7 shadow-gold">
+        <h3 class="font-display font-700 text-lg text-ink tracking-[-0.01em]">Prefer To Talk It Through?</h3>
+        <p class="mt-2 text-sm text-ink/70 leading-[1.7] normal-case">Give us a call &mdash; we're happy to talk through your project and give you a straight answer.</p>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <div class="lg:col-span-3">
+      <div class="rounded-2xl bg-surface border border-hairline p-7 md:p-10 shadow-card">
+        <form id="contactForm" class="space-y-5" onsubmit="return false;">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="field-label" for="cf-name">Full Name</label>
+              <input id="cf-name" type="text" required placeholder="Your name" class="field" />
+            </div>
+            <div>
+              <label class="field-label" for="cf-phone">Phone Number</label>
+              <input id="cf-phone" type="tel" required placeholder="(504) 000-0000" class="field" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="field-label" for="cf-email">Email Address</label>
+              <input id="cf-email" type="email" placeholder="you@email.com" class="field" />
+            </div>
+            <div>
+              <label class="field-label" for="cf-location">Project Location</label>
+              <input id="cf-location" type="text" placeholder="City or parish" class="field" />
+            </div>
+          </div>
+
+          <div>
+            <label class="field-label" for="cf-service">Service Needed</label>
+            <select id="cf-service" class="field">
+              <option value="">Select a service&hellip;</option>
+              <option>Excavation</option>
+              <option>Land Clearing</option>
+              <option>Tree &amp; Root-Ball Removal</option>
+              <option>Land Grading &amp; Sculpting</option>
+              <option>Culvert Installation</option>
+              <option>Gravel Driveway Installation</option>
+              <option>Debris Removal</option>
+              <option>Pond Construction &amp; Excavation</option>
+              <option>Pool Removal</option>
+              <option>House Pad Construction</option>
+              <option>Concrete Removal</option>
+              <option>Demolition Services</option>
+              <option>Dirt Work &amp; Site Prep</option>
+              <option>Not Sure / Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="field-label" for="cf-message">Tell Us About Your Project</label>
+            <textarea id="cf-message" rows="5" placeholder="What are you looking to get done?" class="field resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="btn-pop w-full sm:w-auto inline-flex items-center justify-center bg-gradient-to-br from-gold to-gold-dark text-ink font-display font-600 px-8 py-3.5 rounded-full shadow-gold hover:from-gold-light hover:to-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+            Send Message
+          </button>
+        </form>
+
+        <div id="contactSuccess" class="hidden text-center py-10">
+          <div class="w-14 h-14 rounded-full bg-gold/15 flex items-center justify-center mx-auto mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#de9211" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-xl tracking-[-0.01em]">Message Sent</h3>
+          <p class="mt-2 text-sm text-white/55 leading-[1.7] normal-case max-w-sm mx-auto">Thanks for reaching out &mdash; we'll get back to you shortly to talk through your project.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="px-6 lg:px-12 pt-20 pb-8 mt-16">
+  <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-14 border-b border-hairline">
+    <div>
+      <a href="index.html" class="flex items-center">
+        <img src="Brand_assets/gulf-south-logo.png" alt="Gulf South Land Services, LLC" class="h-16 w-auto shrink-0" />
+      </a>
+      <p class="mt-4 text-sm text-white/50 leading-[1.7] max-w-xs normal-case">Your trusted partner for excavation, land clearing, and site prep across Greater New Orleans.</p>
+    </div>
+    <div>
+      <h4 class="font-display font-600 text-sm mb-4 tracking-wide">Quick Links</h4>
+      <ul class="space-y-2.5 text-sm text-white/50 normal-case">
+        <li><a href="index.html#about" class="hover:text-gold transition-colors duration-300">About Us</a></li>
+        <li><a href="services.html" class="hover:text-gold transition-colors duration-300">Services</a></li>
+        <li><a href="index.html#dealer" class="hover:text-gold transition-colors duration-300">Why Choose Us</a></li>
+        <li><a href="index.html#reviews" class="hover:text-gold transition-colors duration-300">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-600 text-sm mb-4 tracking-wide">Services</h4>
+      <ul class="space-y-2.5 text-sm text-white/50 normal-case">
+        <li><a href="services.html#excavation" class="hover:text-gold transition-colors duration-300">Excavation</a></li>
+        <li><a href="services.html#land-clearing" class="hover:text-gold transition-colors duration-300">Land Clearing</a></li>
+        <li><a href="services.html#site-prep" class="hover:text-gold transition-colors duration-300">Site Prep</a></li>
+        <li><a href="services.html#debris-removal" class="hover:text-gold transition-colors duration-300">Debris Removal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-600 text-sm mb-4 tracking-wide">Contact</h4>
+      <ul class="space-y-2.5 text-sm text-white/50 normal-case">
+        <li><a href="tel:+15049128400" class="hover:text-gold transition-colors duration-300">504-912-8400</a></li>
+        <li><a href="tel:+15043072437" class="hover:text-gold transition-colors duration-300">504-307-2437</a></li>
+        <li class="text-white/50">New Orleans, LA</li>
+        <li><a href="contact.html" class="hover:text-gold transition-colors duration-300">Get A Free Estimate</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="mt-8 text-center text-xs text-white/35 normal-case">&copy; 2026 Gulf South Land Services, LLC. All rights reserved.</p>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const siteHeader = document.getElementById('siteHeader');
+  const positionMobileMenu = () => { mobileMenu.style.top = siteHeader.offsetHeight + 'px'; };
+  positionMobileMenu();
+  window.addEventListener('resize', positionMobileMenu);
+  let open = false;
+  menuBtn.addEventListener('click', () => {
+    open = !open;
+    mobileMenu.classList.toggle('opacity-0', !open);
+    mobileMenu.classList.toggle('pointer-events-none', !open);
+    mobileMenu.classList.toggle('-translate-y-2', !open);
+    menuBtn.innerHTML = open
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(a => a.addEventListener('click', () => {
+    open = false;
+    mobileMenu.classList.add('opacity-0','pointer-events-none','-translate-y-2');
+    menuBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+  }));
+
+  const contactForm = document.getElementById('contactForm');
+  const contactSuccess = document.getElementById('contactSuccess');
+  contactForm.addEventListener('submit', () => {
+    contactForm.classList.add('hidden');
+    contactSuccess.classList.remove('hidden');
+  });
+</script>
+</body>
+</html>

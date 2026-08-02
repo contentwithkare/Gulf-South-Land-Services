@@ -1,5 +1,5 @@
 .claude/
-Brand_assets/
 temporary screenshots/
-*.png
 node_modules/
+.DS_Store
+dribbble.com_shots_*.png
